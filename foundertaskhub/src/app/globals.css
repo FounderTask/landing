@@ -89,6 +89,7 @@ button.cta:hover {
 
 .logo {
   width: 160px;
-  height: auto
-  margin-top: 20px;
+  height: auto;
+  display: block;
+  margin-top: 24px auto 0 auto;
 }
