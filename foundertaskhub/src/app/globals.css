@@ -36,8 +36,9 @@ body {
 .logo {
   max-width: 200px;
   height: auto;
-  margin: 0 auto 30px auto;
   display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .title {
