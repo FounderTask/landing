@@ -11,21 +11,20 @@
       background-color: #000;
       font-family: 'Helvetica Neue', sans-serif;
       color: #dff;
+      text-align: center;
+      background-image: radial-gradient(circle at top left, rgba(0, 255, 231, 0.1), transparent 70%);
+      background-size: cover;
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-      background-image: radial-gradient(ellipse at center, rgba(0, 255, 231, 0.06), transparent 60%);
-      background-size: cover;
+      padding: 40px 20px;
     }
 
-    .logo {
-      font-size: 46px;
-      font-weight: bold;
-      color: #00ffe7;
-      text-shadow: 0 0 20px #00ffe7;
+    header img {
+      max-width: 300px;
+      height: auto;
       margin-bottom: 10px;
     }
 
@@ -36,7 +35,7 @@
     }
 
     .description {
-      max-width: 800px;
+      max-width: 750px;
       font-size: 18px;
       line-height: 1.6;
       color: #ccfffa;
@@ -44,27 +43,26 @@
     }
 
     .checklist {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 800px;
       margin-bottom: 50px;
     }
 
     .item {
-      font-size: 16px;
       display: flex;
       align-items: center;
-      max-width: 320px;
+      justify-content: center;
+      font-size: 16px;
       color: #bbfff8;
     }
 
     .item::before {
-      content: "✔️";
-      margin-right: 10px;
-      font-size: 16px;
+      content: "✔";
       color: #00ffe7;
+      margin-right: 8px;
+      font-weight: bold;
     }
 
     .item span {
@@ -73,7 +71,7 @@
     }
 
     .cta-button {
-      padding: 16px 34px;
+      padding: 16px 36px;
       background-color: #00ffe7;
       color: #000;
       font-weight: bold;
@@ -87,7 +85,7 @@
 
     .cta-button:hover {
       background-color: #00dacb;
-      box-shadow: 0 0 30px #00ffe7;
+      box-shadow: 0 0 35px #00ffe7;
     }
 
     .socials {
@@ -107,8 +105,8 @@
     }
 
     @media (max-width: 768px) {
-      .logo {
-        font-size: 36px;
+      header img {
+        max-width: 200px;
       }
 
       .subtitle {
@@ -117,11 +115,6 @@
 
       .description {
         font-size: 16px;
-        padding: 0 10px;
-      }
-
-      .item {
-        font-size: 14px;
       }
 
       .cta-button {
@@ -133,7 +126,10 @@
 </head>
 <body>
 
-  <div class="logo">FounderTask Hub</div>
+  <header>
+    <img src="assets/logo.png" alt="FounderTask Hub Logo" />
+  </header>
+
   <div class="subtitle">Where bold ideas, meet the right minds</div>
 
   <p class="description">
@@ -151,7 +147,7 @@
   <button class="cta-button">LAUNCH WITH US</button>
 
   <div class="socials">
-    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Instagram">📷</a>
     <a href="#" aria-label="Twitter">🐦</a>
   </div>
 
